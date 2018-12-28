@@ -2,9 +2,10 @@
   "name": "objection",
   "version": "1.5.0-rc.1",
   "description": "An SQL-friendly ORM for Node.js",
-  "main": "lib/objection.js",
+  "main": "dist/objection.js",
   "license": "MIT",
   "scripts": {
+    "build": "babel lib --out-dir dist",
     "test": "npm run eslint && mocha --slow 10 --timeout 15000 --reporter spec --recursive tests --exclude \"tests/unit/relations/files/**\"",
     "test-travis": "npm run eslint && nyc mocha --slow 100 --timeout 60000 --reporter spec --recursive tests --exclude \"tests/unit/relations/files/**\" && npm run test-typings",
     "test-fast": "mocha --slow 10 --timeout 15000 --reporter spec --recursive tests --bail --exclude \"tests/unit/relations/files/**\"",
@@ -38,7 +39,7 @@
     "url": "git://github.com/vincit/objection.js.git"
   },
   "engines": {
-    "node": ">=6.0.0"
+    "node": ">=4.0.0"
   },
   "keywords": [
     "orm",
@@ -66,6 +67,9 @@
     "knex": "0.x"
   },
   "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
     "@types/knex": "^0.14.5",
     "@types/node": "^10.0.6",
     "babel-eslint": "^10.0.1",
