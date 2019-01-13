@@ -1,5 +1,10 @@
 [![Build Status](https://travis-ci.org/Vincit/objection.js.svg?branch=master)](https://travis-ci.org/Vincit/objection.js) [![Coverage Status](https://coveralls.io/repos/github/Vincit/objection.js/badge.svg?branch=master&service=github)](https://coveralls.io/github/Vincit/objection.js?branch=master) [![Join the chat at https://gitter.im/Vincit/objection.js](https://badges.gitter.im/Vincit/objection.js.svg)](https://gitter.im/Vincit/objection.js?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
+### About this fork
+
+Objection does not work with ES5 classes, and the author has expressly noted that he does not wish to support this in the root version of the lib. All I have done and plan to do here is compile to ES2015 in Babel.
+
+
 # [Objection.js](https://vincit.github.io/objection.js)
 
 [Objection.js](https://vincit.github.io/objection.js) is an [ORM](https://en.wikipedia.org/wiki/Object-relational_mapping)
